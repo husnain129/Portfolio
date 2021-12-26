@@ -24,7 +24,9 @@ const Project = () => {
         let dir = index % 2 === 0 ? "flex-col-reverse" : "flex-col";
         return (
           <>
-            <ProjectShow id={index} imgUrl={img} flexDir={dir} />
+            <div className="md:h-[90vh]">
+              <ProjectShow id={index} imgUrl={img} flexDir={dir} />
+            </div>
           </>
         );
       })}
@@ -41,9 +43,9 @@ function ProjectShow({ flexDir, imgUrl }) {
     }
   }, [controls, inView]);
   return (
-    <div className="flex items-center mt-5 justify-center w-full h-[90vh] overflow-hidden">
+    <div className="flex items-center mt-5 justify-center w-full h-max md:h-[90vh] overflow-hidden">
       {flexDir === "flex-col-reverse" ? (
-        <div className="grid grid-cols-2 items-center justify-center ">
+        <div className="md:grid md:grid-cols-2 flex flex-col items-center justify-center ">
           <ProjectDetail flexDir={flexDir} ref={ref} controls={controls} />
           <motion.img
             ref={ref}
@@ -52,12 +54,11 @@ function ProjectShow({ flexDir, imgUrl }) {
             animate={controls}
             src={imgUrl}
             alt="sad"
-            width={550}
-            className="object-cover h-[90%] overflow-hidden"
+            className="object-cover w-[80%] h-[80%] md:w-[450px] md:h-[90%] overflow-hidden mt-5 :mt-0"
           />
         </div>
       ) : (
-        <div className="grid grid-cols-2 items-center justify-center">
+        <div className="md:grid md:grid-cols-2 flex flex-col items-center justify-center">
           <motion.img
             ref={ref}
             variants={x_axis_varient}
@@ -65,8 +66,7 @@ function ProjectShow({ flexDir, imgUrl }) {
             animate={controls}
             src={imgUrl}
             alt="sad"
-            width={550}
-            className="object-cover h-[90%] overflow-hidden"
+            className="object-cover w-[80%] h-[80%] md:w-[500px] md:h-[90%] overflow-hidden mb-5 :mb-0"
           />
           <ProjectDetail flexDir={flexDir} ref={ref} controls={controls} />
         </div>
@@ -77,9 +77,11 @@ function ProjectShow({ flexDir, imgUrl }) {
 
 function ProjectDetail({ ref, controls, flexDir }) {
   let flexDirClass =
-    flexDir === "flex-col-reverse" ? "items-end pr-12" : "items-start pl-12";
+    flexDir === "flex-col-reverse"
+      ? "md:items-end mt-10 mb-10 md:pr-12"
+      : "md:items-start md:pl-12";
   let flexDirClassUpdate =
-    "flex flex-col gap-7 justify-center" + " " + flexDirClass;
+    "flex flex-col gap-7 items-center justify-center" + " " + flexDirClass;
   return (
     <div className={flexDirClassUpdate}>
       <motion.h1
@@ -87,7 +89,7 @@ function ProjectDetail({ ref, controls, flexDir }) {
         variants={fadeIn("down")}
         initial="initial"
         animate={controls}
-        className="text-5xl uppercase"
+        className="md:text-5xl sm:text-4xl text-2xl uppercase"
       >
         pendisse-pulvinar
       </motion.h1>
@@ -96,11 +98,11 @@ function ProjectDetail({ ref, controls, flexDir }) {
         variants={fadeIn("down")}
         initial="initial"
         animate={controls}
-        className="text-xl"
+        className="md:text-xl sm:text-xl text-lg"
       >
         Strategy, Concept, Web Design, Marketing
       </motion.p>
-      <button className="text-2xl border-b-2 border-[orange] pb-1">
+      <button className="md:text-2xl sm:text-xl text-lg border-b-2 border-[orange] pb-1">
         view project
       </button>
     </div>
