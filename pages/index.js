@@ -1,5 +1,5 @@
 import About from "./components/About";
-import { Header } from "./components/Header";
+import Header from "./components/Header";
 import Menu from "./components/Menu";
 import Project from "./components/Project";
 import Work from "./components/Work";
