@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../../varients";
 
-export const Header = () => {
+const Header = () => {
   return (
     <div className="flex sticky top-0 bg-white m-0 p-0 items-center justify-center h-[10vh] w-full ">
       <motion.nav
@@ -20,3 +20,5 @@ export const Header = () => {
     </div>
   );
 };
+
+export default Header;
