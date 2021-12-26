@@ -1,7 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { imgVarient, x_axis_varient } from "../varients";
+import { imgVarient, x_axis_varient } from "../../varients";
 
 const About = () => {
   const controls = useAnimation();
