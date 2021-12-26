@@ -27,11 +27,7 @@ function MenuFooter() {
       className="flex items-center justify-between min-w-full h-auto "
     >
       <div className="flex items-center space-x-6">
-        <IoLogoInstagram
-          size={25}
-          className="cursor-pointer"
-          className="cursor-pointer"
-        />
+        <IoLogoInstagram size={25} className="cursor-pointer" />
         <RiTwitterLine size={25} className="cursor-pointer" />
         <TiSocialFacebook size={25} className="cursor-pointer" />
         <FiGithub size={20} className="cursor-pointer" />
