@@ -1,7 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { imgVarient, x_axis_varient } from "../../varients";
+import { imgVarient, x_axis_varient } from "../varients";
 
 const About = () => {
   const controls = useAnimation();
@@ -21,7 +21,7 @@ const About = () => {
     >
       <div className="grid grid-cols-2 h-full justify-center">
         <div className="flex items-center justify-center">
-          <img src="/user.jpeg" alt="" className="shadow" />
+          <Img src="/user.jpeg" alt="" className="shadow" />
         </div>
         <motion.div
           ref={ref}

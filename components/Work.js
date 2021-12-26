@@ -1,7 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { fadeIn } from "../../varients";
+import { fadeIn } from "../varients";
 const Work = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
