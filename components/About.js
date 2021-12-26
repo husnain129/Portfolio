@@ -21,7 +21,7 @@ const About = () => {
     >
       <div className="grid grid-cols-2 h-full justify-center">
         <div className="flex items-center justify-center">
-          <Img src="/user.jpeg" alt="" className="shadow" />
+          <img src="/user.jpeg" alt="" className="shadow" />
         </div>
         <motion.div
           ref={ref}
