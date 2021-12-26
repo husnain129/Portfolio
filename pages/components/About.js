@@ -17,7 +17,7 @@ const About = () => {
       animate={controls}
       initial="initial"
       variants={imgVarient}
-      className="h-[100vh] w-full m-0 p-0 "
+      className="h-[100vh] w-full mt-4 p-0 "
     >
       <div className="grid grid-cols-2 h-full justify-center">
         <div className="flex items-center justify-center">

@@ -6,7 +6,7 @@ import { TiSocialFacebook } from "react-icons/ti";
 import { fadeIn } from "../../varients";
 const Menu = () => {
   return (
-    <div className="flex m-0 p-0 items-center justify-center h-[90vh] w-[100%] ">
+    <div className="flex mt-0 p-0 items-center justify-center h-[90vh] w-[100%] bg-[#F9F3DF]">
       <div className="flex flex-col justify-around items-start h-full w-[90%] ">
         <div className="flex flex-col space-y-[-90px] items-start">
           <h1 className="text-[130pt] font-mono ">Web</h1>

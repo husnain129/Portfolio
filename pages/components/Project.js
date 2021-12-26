@@ -24,7 +24,7 @@ const Project = () => {
         let dir = index % 2 === 0 ? "flex-col-reverse" : "flex-col";
         return (
           <>
-            <ProjectShow imgUrl={img} flexDir={dir} />
+            <ProjectShow id={index} imgUrl={img} flexDir={dir} />
           </>
         );
       })}
@@ -41,9 +41,9 @@ function ProjectShow({ flexDir, imgUrl }) {
     }
   }, [controls, inView]);
   return (
-    <div className="flex items-center justify-center w-full h-[100vh]">
+    <div className="flex items-center mt-5 justify-center w-full h-[90vh] overflow-hidden">
       {flexDir === "flex-col-reverse" ? (
-        <div className="grid grid-cols-2 items-center justify-center">
+        <div className="grid grid-cols-2 items-center justify-center ">
           <ProjectDetail flexDir={flexDir} ref={ref} controls={controls} />
           <motion.img
             ref={ref}
@@ -53,7 +53,7 @@ function ProjectShow({ flexDir, imgUrl }) {
             src={imgUrl}
             alt="sad"
             width={550}
-            className="object-cover"
+            className="object-cover h-[90%] overflow-hidden"
           />
         </div>
       ) : (
@@ -66,7 +66,7 @@ function ProjectShow({ flexDir, imgUrl }) {
             src={imgUrl}
             alt="sad"
             width={550}
-            className="object-cover"
+            className="object-cover h-[90%] overflow-hidden"
           />
           <ProjectDetail flexDir={flexDir} ref={ref} controls={controls} />
         </div>

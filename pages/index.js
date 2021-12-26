@@ -1,4 +1,6 @@
+import React from "react";
 import About from "./components/About";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
 import Project from "./components/Project";
@@ -12,6 +14,7 @@ export default function Home() {
       <About />
       <Work />
       <Project />
+      <Footer />
     </div>
   );
 }
