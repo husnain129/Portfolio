@@ -3,7 +3,7 @@ import { fadeIn } from "../../varients";
 
 const Header = () => {
   return (
-    <div className="flex sticky top-0 m-0 p-0 items-center justify-center h-[10vh] w-full ">
+    <div className="flex sticky top-0 m-0 p-0 items-center justify-center h-[10vh] w-full bg-[#fff]">
       <motion.nav
         variants={fadeIn("up")}
         initial="initial"
