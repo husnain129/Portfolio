@@ -25,7 +25,7 @@ const Project = () => {
         return (
           <>
             <div className="md:h-[90vh]">
-              <ProjectShow id={index} imgUrl={img} flexDir={dir} />
+              <ProjectShow key={index} imgUrl={img} flexDir={dir} />
             </div>
           </>
         );

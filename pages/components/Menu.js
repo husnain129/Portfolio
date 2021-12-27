@@ -4,9 +4,10 @@ import { IoLogoInstagram } from "react-icons/io";
 import { RiTwitterLine } from "react-icons/ri";
 import { TiSocialFacebook } from "react-icons/ti";
 import { fadeIn } from "../../varients";
+// bg-[#F9F3DF]
 const Menu = () => {
   return (
-    <div className="flex mt-0 p-0 items-center justify-center md:h-[90vh] sm:h-[40vh] h-[40vh] w-[100%] md:py-0 sm:py-5 py-5 bg-[#F9F3DF]">
+    <div className="flex mt-0 p-0 items-center justify-center md:h-[90vh] sm:h-[40vh] h-[40vh] w-[100%] md:py-0 sm:py-5 py-5">
       <div className="flex flex-col md:justify-around sm:justify-between justify-between items-start h-full w-[90%] ">
         <div className="flex flex-col md:space-y-[-90px] sm:space-y-[-50px] space-y-[-30px] items-start">
           <h1 className="md:text-[130pt] sm:text-[90pt] text-[40pt] font-mono ">
