@@ -17,14 +17,14 @@ const About = () => {
       animate={controls}
       initial="initial"
       variants={imgVarient}
-      className="md:h-[100vh] sm:h-max h-maxw-full md:mt-4 sm:mt-4 mt-6 mb-5 p-0 "
+      className="md:h-[100vh] sm:h-max h-max w-full md:mt-4 sm:mt-4 mt-6 mb-5 p-0 "
     >
-      <div className="grid md:grid-cols-2 sm-grid-rows-2 h-full justify-center">
+      <div className="grid md:grid-cols-2 md:mt-0 sm-grid-rows-2 h-full justify-center">
         <div className="flex items-center justify-center">
           <img
-            src="/user.jpeg"
+            src="/profile.jpg"
             alt=""
-            className="shadow md:w-[450px] md:mx-5 sm:w-[65%] w-[60%]"
+            className="shadow drop-shadow-lg saturate-150 rounded z-[-100] md:w-[450px] md:mx-5 sm:w-[65%] w-[60%]"
           />
         </div>
         <motion.div
